@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+
+  
+  body{
+      background-color: skyblue;
+      font-family: 'Dancing Script', cursive;;
+  }
+  
+  .container{
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 10px;
+  }
+
+  .todos-container{
+      margin: 60px auto;
+      width: 500px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 14px;
+  }
+
+  form{
+      padding: 40px 0;
+      display: flex;
+      justify-content: space-between;
+  }
+
+ input{
+    padding: 10px 77px;
+    border: 1px solid #ccc;
+
+}
+
+  ol{
+      padding-left: 20px;
+  }
+
+  .btns{
+      padding-top:  20px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .btn{
+      padding: 14px 60px;
+      border: none;
+  }
+
+  .btns .btn{
+     border-radius: 20px;
+  }
+
+ .btn:focus{
+    outline: 2px solid black;
+ }
+
+  .btn:hover{
+    color: white;
+    background-color: skyblue;
+    cursor: pointer;
+  }
+
+  .btn.dismiss-all:hover{
+      background-color: rgb(218, 40, 75);
+  }
+
+  ol li{
+      padding: 10px;
+      border-radius: 2px;
+      font-size: 24px;
+  }
+
+  ol li:nth-child(even){
+      background-color: #ccc;
+  }
+
+  li.completed {
+      opacity: .7;
+      text-decoration: line-through;
+  }
